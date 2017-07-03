@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <title>Login - Cosa Nostra Barbearia</title>
+<style type="text/css">
+        body {
+            background-image: url('../../static/app/img/fundo.jpg');
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-color: #000000;
+            color: #999791;
+            text-align: center;
+        }
+
+        footer {
+            color:#999791;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../../static/app/img/logo.png" />
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</body>
+</html>

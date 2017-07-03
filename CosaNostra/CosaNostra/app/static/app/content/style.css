@@ -1,0 +1,36 @@
+.mynavbar{
+	border-color: #474746;
+	color: #7b6d3e;
+	background: linear-gradient(to bottom, #444440,#383835 80%,#333330);
+	border-bottom: #66630c 3px solid;
+}
+
+.myjumbotron{
+	background: linear-gradient(to bottom, #6e602e,#7b6d3e 80%,#a18e4e);
+	min-height: 400px;
+}
+
+.mycontainer{
+
+	background-image: url('../img/fundo.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+}
+.opac{
+	opacity: 0.5;
+}
+
+.mybtn{
+	border-color: #000000;
+}
+.width40{
+	width: 40%; 
+}
+.width30{
+	width: 30%;
+}
+.width20{
+	width: 20%;
+}
