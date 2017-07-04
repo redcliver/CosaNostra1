@@ -3,10 +3,10 @@
 
 {% block body %}
 <div class="jumbotron">
-    <form method="post">
-        {% csrf_token %}
+    <form method="POST">
+        {% csrf_token %} 
         <h3>{{form.as_p}}</h3>
-        <button type="submit">Registrar</button>
+        <button type="submit">Cadastrar</button>
     </form>
 </div>
 {% endblock %}

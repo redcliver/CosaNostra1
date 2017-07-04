@@ -12,5 +12,5 @@ class Cliente(models.Model):
     
 class ClienteForm(forms.ModelForm):
     class Meta:
-        model = Cliente;
+        model = Cliente
         fields = ['nome', 'tel', 'dataNasc']

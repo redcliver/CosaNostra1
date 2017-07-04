@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^vendas/', include('vendas.urls')),
     url(r'^clientes/', include('clientes.urls')),
     url(r'^agenda/', include('agenda.urls')),
+    url(r'^outros/', include('outros.urls')),
     url(r'^caixa/', include('caixa.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
