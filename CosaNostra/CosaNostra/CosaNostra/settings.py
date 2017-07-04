@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'app',
     'home',
     'cortes',
+    'vendas',
+    'clientes',
+    'agenda',
     'caixa',
     # Add your apps here to enable them
     'django.contrib.admin',

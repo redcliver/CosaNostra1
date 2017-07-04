@@ -16,7 +16,12 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'', include('home.urls')),
-    url(r'^home/$', include('home.urls')),
+    url(r'^home/', include('home.urls')),
+    url(r'^cortes/', include('cortes.urls')),
+    url(r'^vendas/', include('vendas.urls')),
+    url(r'^clientes/', include('clientes.urls')),
+    url(r'^agenda/', include('agenda.urls')),
+    url(r'^caixa/', include('caixa.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

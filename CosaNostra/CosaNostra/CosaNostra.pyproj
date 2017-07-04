@@ -31,6 +31,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="agenda\admin.py" />
+    <Compile Include="agenda\apps.py" />
+    <Compile Include="agenda\migrations\__init__.py" />
+    <Compile Include="agenda\models.py" />
+    <Compile Include="agenda\tests.py" />
+    <Compile Include="agenda\urls.py" />
+    <Compile Include="agenda\views.py" />
+    <Compile Include="agenda\__init__.py" />
     <Compile Include="app\forms.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
@@ -42,13 +50,27 @@
     <Compile Include="caixa\migrations\__init__.py" />
     <Compile Include="caixa\models.py" />
     <Compile Include="caixa\tests.py" />
+    <Compile Include="caixa\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="caixa\views.py" />
     <Compile Include="caixa\__init__.py" />
+    <Compile Include="clientes\admin.py" />
+    <Compile Include="clientes\apps.py" />
+    <Compile Include="clientes\migrations\__init__.py" />
+    <Compile Include="clientes\models.py" />
+    <Compile Include="clientes\tests.py" />
+    <Compile Include="clientes\urls.py" />
+    <Compile Include="clientes\views.py" />
+    <Compile Include="clientes\__init__.py" />
     <Compile Include="cortes\admin.py" />
     <Compile Include="cortes\apps.py" />
     <Compile Include="cortes\migrations\__init__.py" />
     <Compile Include="cortes\models.py" />
     <Compile Include="cortes\tests.py" />
+    <Compile Include="cortes\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="cortes\views.py" />
     <Compile Include="cortes\__init__.py" />
     <Compile Include="home\admin.py" />
@@ -66,8 +88,19 @@
     <Compile Include="CosaNostra\settings.py" />
     <Compile Include="CosaNostra\urls.py" />
     <Compile Include="CosaNostra\wsgi.py" />
+    <Compile Include="vendas\admin.py" />
+    <Compile Include="vendas\apps.py" />
+    <Compile Include="vendas\migrations\__init__.py" />
+    <Compile Include="vendas\models.py" />
+    <Compile Include="vendas\tests.py" />
+    <Compile Include="vendas\urls.py" />
+    <Compile Include="vendas\views.py" />
+    <Compile Include="vendas\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="agenda\" />
+    <Folder Include="agenda\migrations\" />
+    <Folder Include="agenda\templates\" />
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
     <Folder Include="app\static\" />
@@ -80,15 +113,24 @@
     <Folder Include="app\templates\app\" />
     <Folder Include="caixa\" />
     <Folder Include="caixa\migrations\" />
+    <Folder Include="caixa\templates\" />
+    <Folder Include="clientes\" />
+    <Folder Include="clientes\migrations\" />
+    <Folder Include="clientes\templates\" />
     <Folder Include="cortes\" />
     <Folder Include="cortes\migrations\" />
+    <Folder Include="cortes\templates\" />
     <Folder Include="CosaNostra\" />
     <Folder Include="home\" />
     <Folder Include="home\migrations\" />
     <Folder Include="home\templates\" />
     <Folder Include="home\templates\home\" />
+    <Folder Include="vendas\" />
+    <Folder Include="vendas\migrations\" />
+    <Folder Include="vendas\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="agenda\templates\agenda.html" />
     <Content Include="app\static\app\img\abrirCaixa.png" />
     <Content Include="app\static\app\img\addCliente.png" />
     <Content Include="app\static\app\img\addCorte.png" />
@@ -112,6 +154,9 @@
     <Content Include="app\static\app\img\setedias.png" />
     <Content Include="app\static\app\img\trintadias.png" />
     <Content Include="app\static\app\img\umdia.png" />
+    <Content Include="caixa\templates\caixa.html" />
+    <Content Include="clientes\templates\clientes.html" />
+    <Content Include="cortes\templates\cortes.html" />
     <Content Include="home\templates\base.html" />
     <Content Include="home\templates\home\home.html" />
     <Content Include="home\templates\home\login.html" />
@@ -145,6 +190,7 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="vendas\templates\vendas.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.html">
