@@ -156,7 +156,9 @@
     <Content Include="app\static\app\img\umdia.png" />
     <Content Include="caixa\templates\caixa.html" />
     <Content Include="clientes\templates\clientes.html" />
+    <Content Include="cortes\templates\agendar.html" />
     <Content Include="cortes\templates\cortes.html" />
+    <Content Include="cortes\templates\imediato.html" />
     <Content Include="home\templates\base.html" />
     <Content Include="home\templates\home\home.html" />
     <Content Include="home\templates\home\login.html" />
