@@ -183,6 +183,7 @@
     <Content Include="app\static\app\img\umdia.png" />
     <Content Include="caixa\templates\caixa.html" />
     <Content Include="clientes\templates\addcliente.html" />
+    <Content Include="clientes\templates\buscaCli.html" />
     <Content Include="clientes\templates\clientes.html" />
     <Content Include="cortes\templates\agendar.html" />
     <Content Include="cortes\templates\cortes.html" />

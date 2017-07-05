@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponseRedirect
-from .models import ImediatoForm, AgendarForm
-
+from .models import Atendimento ,ImediatoForm, AgendarForm
+from caixa.models import Caixa
 # Create your views here.
 
 def cortes(request):
@@ -13,7 +13,13 @@ def imediato(request):
     elif request.method == "POST":
         form = ImediatoForm(request.POST)
         form.save()
-        return HttpResponseRedirect('/home')
+        form = ImediatoForm()
+        credito = Atendimento.objects.latest('pk')
+        caixa = Caixa.objects.latest('pk')
+        creditoTotal = caixa.total+credito.servico.preco
+        fechamento = Caixa(estado=1, total=creditoTotal)
+        fechamento.save()
+        return render(request, 'imediato.html', {'title':'Imediato', 'form':form})
 
 def agendar(request):
     form = AgendarForm()

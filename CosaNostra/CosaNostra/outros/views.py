@@ -9,11 +9,12 @@ def outros(request):
 def cadservico(request):
     if request.method == "GET":
         form = ServicoForm()
-        return render(request, 'cadproduto.html', {'form':form})
+        return render(request, 'cadservico.html', {'title':'Cadastrar Serviço', 'form':form})
     elif request.method == "POST":
         form = ServicoForm(request.POST)
         form.save()
-        return HttpResponseRedirect('/home')
+        form = ServicoForm()
+        return render(request, 'cadservico.html', {'title':'Cadastrar Serviço', 'form':form})
 
 def cadproduto(request):
     if request.method == "GET":
@@ -22,6 +23,7 @@ def cadproduto(request):
     elif request.method == "POST":
         form = ProdutoForm(request.POST)
         form.save()
-        return HttpResponseRedirect('/home')
+        form = ProdutoForm()
+        return render(request, 'cadproduto.html', {'title':'Cadastrar produto', 'form':form})
     
     
