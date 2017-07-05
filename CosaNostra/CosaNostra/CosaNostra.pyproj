@@ -224,6 +224,8 @@
     <Content Include="app\templates\app\layout.html" />
     <Content Include="app\templates\app\login.html" />
     <Content Include="app\templates\app\loginpartial.html" />
+    <Content Include="vendas\templates\bar.html" />
+    <Content Include="vendas\templates\imediato.html" />
     <Content Include="vendas\templates\vendas.html" />
   </ItemGroup>
   <ItemGroup>
