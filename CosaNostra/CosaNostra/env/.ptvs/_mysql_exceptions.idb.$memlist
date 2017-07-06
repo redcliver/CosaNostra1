@@ -1,0 +1,13 @@
+DataError
+NotSupportedError
+StandardError
+Error
+InterfaceError
+Warning
+InternalError
+OperationalError
+ProgrammingError
+DatabaseError
+Exception
+MySQLError
+IntegrityError

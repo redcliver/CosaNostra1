@@ -22,6 +22,12 @@ def imediato(request):
         return render(request, 'imediato.html', {'title':'Imediato', 'form':form})
 
 def agendar(request):
-    form = AgendarForm()
-
-    return render(request, 'agendar.html', {'title':'Agendar', 'form':form})
+    if request.method == "GET":
+        form = AgendarForm()
+        return render(request, 'agendar.html', {'title':'Agendar', 'form':form})
+    elif request.method == "POST":
+        form = AgendarForm(request.POST)
+        form.save()
+        form = AgendarForm()
+        
+        return render(request, 'agendar.html', {'title':'Agendar', 'form':form})

@@ -11,7 +11,7 @@ Timestamp
 SQLITE_PRAGMA
 InterfaceError
 threadsafety
-DataError
+connect
 SQLITE_DROP_INDEX
 DatabaseError
 enable_callback_tracebacks
@@ -30,12 +30,12 @@ dump
 Binary
 OperationalError
 adapt
-SQLITE_CREATE_VIEW
 SQLITE_DROP_TABLE
+SQLITE_CREATE_VIEW
 SQLITE_ANALYZE
 SQLITE_CREATE_TRIGGER
 SQLITE_DROP_TEMP_INDEX
-SQLITE_ATTACH
+TimeFromTicks
 enable_shared_cache
 complete_statement
 register_adapter
@@ -44,7 +44,7 @@ adapters
 SQLITE_DROP_TEMP_TABLE
 SQLITE_DENY
 SQLITE_DETACH
-connect
+DataError
 time
 Warning
 SQLITE_CREATE_TEMP_TRIGGER
@@ -73,6 +73,6 @@ Error
 SQLITE_OK
 SQLITE_DELETE
 datetime
-TimeFromTicks
+SQLITE_ATTACH
 SQLITE_CREATE_TEMP_VIEW
 register_converter

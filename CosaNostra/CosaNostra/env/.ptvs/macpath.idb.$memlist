@@ -11,7 +11,7 @@ S_IWRITE
 ImportError
 ST_UID
 realpath
-S_IFWHT
+ST_ATIME
 ST_INO
 BytesWarning
 S_IEXEC
@@ -75,7 +75,7 @@ isinstance
 isabs
 pardir
 S_ISGID
-ST_ATIME
+S_IFWHT
 isdir
 S_ISDOOR
 FILE_ATTRIBUTE_DEVICE
