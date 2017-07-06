@@ -1730,7 +1730,8 @@ setDocument = Sizzle.setDocument = function( node ) {
 					return 1;
 				}
 
-				// Maintain original order
+				// 
+tain original order
 				return sortInput ?
 					( indexOf.call( sortInput, a ) - indexOf.call( sortInput, b ) ) :
 					0;
